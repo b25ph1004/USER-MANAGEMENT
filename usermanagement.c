@@ -16,7 +16,7 @@ void resgisterUser() {
     printf("enter Name :");
     scanf("%s",u.name);
     printf("enter Email:");
-    scanf("%s",email);
+    scanf("%s",u.email);
     printf("enter contact number:");
     scanf("%s",u.contact);
     printf("enter password:");
