@@ -8,3 +8,20 @@ struct User {
     char contact[50];
     char password[50];
 }
+void resgisterUser() {
+    struct User u;
+    FILE *fp =fopen("store.txt","a");
+    printf("enter User ID:");
+    scanf("%d",&u.id);
+    printf("enter Name :");
+    scanf("%s",u.name);
+    printf("enter Email:");
+    scanf("%s",u.email);
+    printf("enter contact number:");
+    scanf("%s",u.contact);
+    printf("enter password:");
+    scanf("%s",u.password);
+    fprintf(fp,"%d %s %s %s %s\n",u.id,u.name,u.email,u.contact,u.password);
+    fclose(fp);
+    printf("user Registered successfully\n");
+}
