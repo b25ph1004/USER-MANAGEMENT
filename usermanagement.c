@@ -23,5 +23,5 @@ void resgisterUser() {
     scanf("%s",u.password);
     fprintf(fp,"%d %s %s %s %s\n",u.id,u.name,u.email,u.contact,u.password);
     fclose(fp);
-    printf("user registered successfully\n");
+    printf("user Registered successfully\n");
 }
